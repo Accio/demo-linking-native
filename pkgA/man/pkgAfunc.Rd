@@ -6,6 +6,9 @@
 \usage{
 pkgAfunc()
 }
+\value{
+A number generated in C
+}
 \description{
 A dummy function exported for demonstration purposes
 }
