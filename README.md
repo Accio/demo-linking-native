@@ -4,6 +4,8 @@ Jitao David Zhang, 2020.01.04
 
 ![Linking to native routines in another package](./dot/vis.svg)
 
+** How to use C codes in another R package? A demo.** 
+
 ## Background
 
 The package `pkgB` links to native routines `pkgA_func` and `pkg_version` in `pkgA`. Please check both packages out to see the details.
