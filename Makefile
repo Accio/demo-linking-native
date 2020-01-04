@@ -1,3 +1,4 @@
+all: install-pkgA install-pkgB run-pkgAfunc run-pkgBfunc
 
 install-pkgA: pkgA
 	cd pkgA; R -q -e "library(devtools);load_all();document('.');install('.')"
