@@ -2,7 +2,7 @@ Linking to native routines in another package: a demo
 ===
 Jitao David Zhang, 2020.01.04
 
-![Linking to native routines in another package][./dot/vis.svg]
+![Linking to native routines in another package](./dot/vis.svg)
 
 ## Background
 
