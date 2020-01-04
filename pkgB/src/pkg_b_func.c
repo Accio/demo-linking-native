@@ -1,4 +1,4 @@
-#include "pkg_b_func.h"
+#include "pkgB.h"
 
 SEXP pkgB_func() {
    Rprintf("Internally, pkgB calls function from pkgA.");
