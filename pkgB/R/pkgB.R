@@ -3,6 +3,7 @@
 #' @author Jitao David Zhang <jitao_david.zhang@roche.com>
 #' @useDynLib pkgB, .registration=TRUE, .fixes="C_"
 #' @name pkgB-package
+#' @import pkgA
 NULL
 
 #' A dummy function that shows linking to native routines in pkgA works
