@@ -1,0 +1,10 @@
+Package: pkgA
+Type: Package
+Title: Package A to demonstrate how to link to native routines in other packages
+Version: 1.0
+Date: 2020-01-04
+Author: Jitao David Zhang <jitao_david.zhang@roche.com>
+Maintainer: Jitao David Zhang <jitao_david.zhang@roche.com>
+Description: Package A exports a C function, pkgA_func, to be used by pkgB
+License: GPL-2
+RoxygenNote: 7.0.2

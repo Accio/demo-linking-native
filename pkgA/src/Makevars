@@ -1,0 +1,3 @@
+## header files are stored in inst/include of the package directory
+PKG_CFLAGS=-I../inst/include
+
