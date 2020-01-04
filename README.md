@@ -2,7 +2,11 @@ Linking to native routines in other packages: a demo
 ===
 Jitao David Zhang, 2020.01.04
 
+## Background
+
 The package `pkgB` links to native routines `pkgA_func` and `pkg_version` in `pkgA`. Please check both packages out to see the details.
+
+## Major notes
 
 The examples were built by following the instructions given in the [*Writing R Extensions* manual](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Linking-to-native-routines-in-other-packages). 
 
@@ -14,7 +18,7 @@ A few details, however, may need highlighting, because I stumbled upon them on t
 4. Use `(TYPE(\*)(PARAMETER TYPE)) R_GetCCallable("pkgA", "pkgA_func")` in `R_init_pkgB` to retrieve the function in the in-coming package.
 5. *DO NOT* include the header file of outgoing package in the init file of incoming package. Otherwise, an error message complaining left-hand expression assignment will be raised.
 
-Other minor notes
+## Minor notes
 
 1. Only functions returning `SEXP` can be called by `.Call`, otherwise the memory will not be mapped and the R session will die ugly. This also apply to `void` functions.
 2. Check `NAMESPACE` in case a `.Call` function cannot be found. Particularly when `package.skeleton` was used to generate the package structure and then roxygen2 was used, in which case the NAMESPACE file is *not* overwritten by default.
