@@ -1,3 +1,6 @@
 /* function declarations */
 
-void pkgA_func();
+#include <R.h>
+
+int pkgA_version();
+SEXP pkgA_func();
