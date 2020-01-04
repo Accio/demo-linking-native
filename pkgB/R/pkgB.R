@@ -9,6 +9,6 @@ NULL
 #' @return Side effect is used
 #' @export
 pkgBfunc <- function() {
-  res <- .Call(C_pkgB_func, username)
-    return(res)
+  res <- .Call(C_pkgB_func)
+  return(res)
 }
