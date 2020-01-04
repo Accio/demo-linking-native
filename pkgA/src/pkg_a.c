@@ -7,6 +7,8 @@
 /* definitions of functions provided for .Call() */
 static const R_CallMethodDef callMethods[] = {
   {"pkgA_func", (DL_FUNC) &pkgA_func, 1},
+  /* note that pkgA_version should not be called by .Call, because it
+   * returns not a SEXP, but int */
   {NULL, NULL, 0}
 };
 
