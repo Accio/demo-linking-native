@@ -3,4 +3,4 @@
 #include <R.h>
 
 int pkgA_version();
-SEXP pkgA_func();
+SEXP pkgA_func(SEXP username);

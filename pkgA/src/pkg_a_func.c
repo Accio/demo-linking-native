@@ -9,10 +9,12 @@ int pkgA_version() {
   return 1;
 }
 
-SEXP pkgA_func() {
+SEXP pkgA_func(SEXP username) {
   SEXP res = PROTECT(allocVector(INTSXP, 1));
   int v = pkgA_version();
-  Rprintf("This is a function from pkgA version %d\n", v);
+  Rprintf("Hello, %s! This is a function from pkgA version %d\n", 
+		  CHAR(STRING_ELT(username, 0)), 
+		  v);
   INTEGER(res)[0]=v;
   UNPROTECT(1);
   return res;

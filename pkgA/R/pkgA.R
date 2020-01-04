@@ -6,9 +6,13 @@
 NULL
 
 #' A dummy function exported for demonstration purposes
+#' @param username Username in characters
 #' @return A number generated in C
 #' @export
-pkgAfunc <- function() {
-  res <- .Call(C_pkgA_func)
+pkgAfunc <- function(username) {
+  if(missing(username)) {
+    username <- Sys.info()["user"]
+  }
+  res <- .Call(C_pkgA_func, username)
   return(res)
 }

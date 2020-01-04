@@ -4,7 +4,10 @@
 \alias{pkgAfunc}
 \title{A dummy function exported for demonstration purposes}
 \usage{
-pkgAfunc()
+pkgAfunc(username)
+}
+\arguments{
+\item{username}{Username in characters}
 }
 \value{
 A number generated in C
