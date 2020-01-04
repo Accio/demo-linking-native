@@ -18,6 +18,8 @@ void R_init_pkgA(DllInfo *info) {
    * Writing R Extensions, */
   R_RegisterCCallable("pkgA", "pkgA_func",
 		  (DL_FUNC) &pkgA_func);
+  R_RegisterCCallable("pkgA", "pkgA_version",
+		  (DL_FUNC) &pkgA_version);
 
   /* register routines to be called by R code */
   R_registerRoutines(info,
