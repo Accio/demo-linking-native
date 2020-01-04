@@ -4,7 +4,7 @@ Jitao David Zhang, 2020.01.04
 
 ![Linking to native routines in another package](./dot/vis.svg)
 
-** How to use C codes in another R package? A demo.** 
+**How to use C codes in another R package? A demo.** 
 
 ## Background
 
