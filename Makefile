@@ -16,3 +16,8 @@ pkgA:
 
 pkgB:
 	R -e "bar <- function() {}; package.skeleton(name='pkgB', list=c('bar'))"
+
+clean:
+	rm -f *.tar.gz
+	rm -rf *.Rcheck
+	find . -type f -name *.so -name *.o -name *.swp -exec rm '{}' \;
