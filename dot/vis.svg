@@ -36,7 +36,7 @@
 <stop offset="1" style="stop-color:khaki;stop-opacity:1.;"/>
 </linearGradient>
 </defs>
-<ellipse fill="url(#l_1)" stroke="black" cx="52" cy="-201" rx="36" ry="22"/>
+<polygon fill="url(#l_1)" stroke="black" points="52,-223 16,-201 52,-179 88,-201 52,-223"/>
 <text text-anchor="middle" x="52" y="-197.3" font-family="Helvetica,sans-Serif" font-size="14.00">C code</text>
 </g>
 <!-- ac&#45;&gt;ar -->
@@ -48,24 +48,24 @@
 <g id="node4" class="node"><title>bc</title>
 <defs>
 <linearGradient id="l_2" gradientUnits="userSpaceOnUse" x1="122.544" y1="-133.556" x2="173.456" y2="-102.444" >
-<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"/>
-<stop offset="1" style="stop-color:khaki;stop-opacity:1.;"/>
+<stop offset="0" style="stop-color:cornsilk;stop-opacity:1.;"/>
+<stop offset="1" style="stop-color:bisque;stop-opacity:1.;"/>
 </linearGradient>
 </defs>
-<ellipse fill="url(#l_2)" stroke="black" cx="148" cy="-118" rx="36" ry="22"/>
+<polygon fill="url(#l_2)" stroke="black" points="148,-140 112,-118 148,-96 184,-118 148,-140"/>
 <text text-anchor="middle" x="148" y="-114.3" font-family="Helvetica,sans-Serif" font-size="14.00">C code</text>
 </g>
 <!-- ac&#45;&gt;bc -->
 <g id="edge3" class="edge"><title>ac&#45;&gt;bc</title>
-<path fill="none" stroke="black" d="M78.3073,-185.923C85.6155,-181.536 93.3618,-176.417 100,-171 109.183,-163.507 118.261,-154.277 126.009,-145.683"/>
-<polygon fill="black" stroke="black" points="128.753,-147.863 132.716,-138.038 123.49,-143.247 128.753,-147.863"/>
+<path fill="none" stroke="black" d="M71.047,-190.136C80.2051,-184.992 91.0988,-178.263 100,-171 110.858,-162.14 121.569,-150.852 130.109,-141.059"/>
+<polygon fill="black" stroke="black" points="132.919,-143.157 136.727,-133.27 127.584,-138.624 132.919,-143.157"/>
 </g>
 <!-- br -->
 <g id="node3" class="node"><title>br</title>
 <defs>
 <linearGradient id="l_3" gradientUnits="userSpaceOnUse" x1="122.544" y1="-53.5564" x2="173.456" y2="-22.4436" >
-<stop offset="0" style="stop-color:lightyellow;stop-opacity:1.;"/>
-<stop offset="1" style="stop-color:khaki;stop-opacity:1.;"/>
+<stop offset="0" style="stop-color:cornsilk;stop-opacity:1.;"/>
+<stop offset="1" style="stop-color:bisque;stop-opacity:1.;"/>
 </linearGradient>
 </defs>
 <ellipse fill="url(#l_3)" stroke="black" cx="148" cy="-38" rx="36" ry="22"/>

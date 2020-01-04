@@ -11,9 +11,9 @@ digraph D {
       gradientangle=315,
       fontname="Helvetica"]
   ar [label = "R code"];
-  ac [label = "C code"];
-  br [label = "R code"];
-  bc [label = "C code"];
+  ac [label = "C code", shape = "diamond"];
+  br [label = "R code", fillcolor = "cornsilk:bisque"];
+  bc [label = "C code", shape = "diamond", fillcolor = "cornsilk:bisque"];
 
   edge [color = black,
        arrowname = vee,
@@ -21,7 +21,7 @@ digraph D {
        fontsize=10]
 
   /* to be visually separated, subgraphs must be prefixed with cluster_ */
-  /* and only the DOT and FDP layout seem to support subgraphs */
+  /* and only the DOT and FDP layout seam to support subgraphs */
   subgraph cluster_pkgA {
     label = "pkgA";
     ac -> ar;
