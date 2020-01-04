@@ -6,7 +6,7 @@
 #include "pkgB.h"
 
 static const R_CallMethodDef callMethods[] = {
-  {"pkgB_func", (DL_FUNC) &pkgB_func, 1},
+  {"pkgB_func", (DL_FUNC) &pkgB_func, 0},
   {NULL, NULL, 0}
 };
 
