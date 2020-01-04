@@ -6,7 +6,9 @@
 NULL
 
 #' A dummy function exported for demonstration purposes
+#' @return A number generated in C
 #' @export
 pkgAfunc <- function() {
-  .Call(C_pkgA_func)
+  res <- .Call(C_pkgA_func)
+  return(res)
 }
