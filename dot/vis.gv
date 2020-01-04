@@ -1,0 +1,35 @@
+digraph D {
+  compound=true;
+
+  node [shape = ellipse,
+      style = filled,
+      fixedsize=true,
+      width=1,
+      height=0.618,
+      fontsize=14,
+      fillcolor = "lightyellow:khaki",
+      gradientangle=315,
+      fontname="Helvetica"]
+  ar [label = "R code"];
+  ac [label = "C code"];
+  br [label = "R code"];
+  bc [label = "C code"];
+
+  edge [color = black,
+       arrowname = vee,
+       fontname="Helvetica",
+       fontsize=10]
+
+  /* to be visually separated, subgraphs must be prefixed with cluster_ */
+  /* and only the DOT and FDP layout seem to support subgraphs */
+  subgraph cluster_pkgA {
+    label = "pkgA";
+    ac -> ar;
+  }
+  subgraph cluster_pkgB {
+    label = "pkgB";
+    bc -> br;
+  }
+
+  ac -> bc;
+}
