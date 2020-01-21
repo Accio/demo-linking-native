@@ -31,5 +31,5 @@ digraph D {
     bc -> br;
   }
 
-  ac -> bc;
+  ac -> bc [color="red", penwidth=2];
 }
