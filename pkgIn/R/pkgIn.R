@@ -1,6 +1,7 @@
 #' pkgIn that links to native routines in pkgOut
 #' @docType package
 #' @author Jitao David Zhang <jitao_david.zhang@roche.com>
+#' @description Demonstrate linking to native routines in the package pkgOut.
 #' @useDynLib pkgIn, .registration=TRUE, .fixes="C_"
 #' @name pkgIn-package
 #' @import pkgOut
