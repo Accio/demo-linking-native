@@ -22,12 +22,12 @@ digraph D {
 
   /* to be visually separated, subgraphs must be prefixed with cluster_ */
   /* and only the DOT and FDP layout seam to support subgraphs */
-  subgraph cluster_pkgA {
-    label = "pkgA";
+  subgraph cluster_pkgOut {
+    label = "pkgOut";
     ac -> ar;
   }
-  subgraph cluster_pkgB {
-    label = "pkgB";
+  subgraph cluster_pkgIn {
+    label = "pkgIn";
     bc -> br;
   }
 
