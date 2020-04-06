@@ -1,0 +1,2 @@
+library(pkgOut)
+pkgOutfunc()

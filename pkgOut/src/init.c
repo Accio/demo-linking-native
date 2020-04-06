@@ -6,22 +6,22 @@
 
 /* definitions of functions provided for .Call() */
 static const R_CallMethodDef callMethods[] = {
-  {"pkgA_func", (DL_FUNC) &pkgA_func, 1},
-  /* note that pkgA_version should not be called by .Call, because it
+  {"pkgOut_func", (DL_FUNC) &pkgOut_func, 1},
+  /* note that pkgOut_version should not be called by .Call, because it
    * returns not a SEXP, but int */
   {NULL, NULL, 0}
 };
 
 /* definition of functions to be exported */
-void R_init_pkgA(DllInfo *info) {
+void R_init_pkgOut(DllInfo *info) {
 
   /* used by external packages linking to internal code from C,
    * see section 'Linking to native routines in other packages',
    * Writing R Extensions, */
-  R_RegisterCCallable("pkgA", "pkgA_func",
-		  (DL_FUNC) &pkgA_func);
-  R_RegisterCCallable("pkgA", "pkgA_version",
-		  (DL_FUNC) &pkgA_version);
+  R_RegisterCCallable("pkgOut", "pkgOut_func",
+		      pkgOut_func);
+  R_RegisterCCallable("pkgOut", "pkgOut_version",
+		      pkgOut_version);
 
   /* register routines to be called by R code */
   R_registerRoutines(info,
