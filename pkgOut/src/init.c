@@ -19,9 +19,9 @@ void R_init_pkgOut(DllInfo *info) {
    * see section 'Linking to native routines in other packages',
    * Writing R Extensions, */
   R_RegisterCCallable("pkgOut", "pkgOut_func",
-		      pkgOut_func);
+		      (DL_FUNC) &pkgOut_func);
   R_RegisterCCallable("pkgOut", "pkgOut_version",
-		      pkgOut_version);
+		      (DL_FUNC) &pkgOut_version);
 
   /* register routines to be called by R code */
   R_registerRoutines(info,
