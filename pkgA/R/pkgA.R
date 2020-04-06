@@ -1,5 +1,6 @@
 #' pkgA for demonstration purpose of linking native routines
 #' @docType package
+#' @description A out-going package that exports a native routine
 #' @author Jitao David Zhang <jitao_david.zhang@roche.com>
 #' @useDynLib pkgA, .registration=TRUE, .fixes="C_"
 #' @name pkgA
