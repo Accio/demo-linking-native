@@ -1,0 +1,17 @@
+Package: pkgIn
+Type: Package
+Title: Demonstrate linking to native routines in another R package
+Version: 1.1
+Date: 2020-04-06
+Authors@R: 
+  person(given = "Jitao David",
+           family = "Zhang",
+           role = c("aut", "cre", "ctb"),
+           email = "jitao_david.zhang@roche.com",
+           comment = c(ORCID="0000-0002-3085-0909"))
+Description: Demonstrates linking to native routines in pkgOut.
+Depends: pkgOut
+LinkingTo: pkgOut
+License: GPL-2
+Encoding: UTF-8
+RoxygenNote: 7.1.0

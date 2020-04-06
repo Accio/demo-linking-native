@@ -3,14 +3,14 @@
 #include <Rinternals.h>
 #include <R_ext/Rdynload.h>
 
-#include "pkgB.h"
+#include "pkgIn.h"
 
 static const R_CallMethodDef callMethods[] = {
-  {"pkgB_func", (DL_FUNC) &pkgB_func, 0},
+  {"pkgIn_func", (DL_FUNC) &pkgIn_func, 0},
   {NULL, NULL, 0}
 };
 
-void R_init_pkgB(DllInfo *info) {
+void R_init_pkgIn(DllInfo *info) {
 
   /* register routines to be called by R code */
   R_registerRoutines(info,
@@ -31,8 +31,8 @@ void R_init_pkgB(DllInfo *info) {
    */ 
   R_forceSymbols(info, TRUE); 
 
-  /* C functions implemented in pkgA */
-  pkgA_func = (SEXP(*)(SEXP)) R_GetCCallable("pkgA", "pkgA_func");
-  pkgA_version = (int(*)()) R_GetCCallable("pkgA", "pkgA_version");
+  /* C functions implemented in pkgOut */
+  pkgOut_func = (SEXP(*)(SEXP)) R_GetCCallable("pkgOut", "pkgOut_func");
+  pkgOut_version = (int(*)()) R_GetCCallable("pkgOut", "pkgOut_version");
 }
 
