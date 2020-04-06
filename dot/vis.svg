@@ -10,14 +10,14 @@
 <title>D</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-266 204,-266 204,4 -4,4"/>
 <g id="clust1" class="cluster">
-<title>cluster_pkgA</title>
+<title>cluster_pkgOut</title>
 <polygon fill="none" stroke="#000000" points="8,-88 8,-254 96,-254 96,-88 8,-88"/>
-<text text-anchor="middle" x="52" y="-238.8" font-family="Times,serif" font-size="14.00" fill="#000000">pkgA</text>
+<text text-anchor="middle" x="52" y="-238.8" font-family="Times,serif" font-size="14.00" fill="#000000">pkgOut</text>
 </g>
 <g id="clust2" class="cluster">
-<title>cluster_pkgB</title>
+<title>cluster_pkgIn</title>
 <polygon fill="none" stroke="#000000" points="104,-8 104,-171 192,-171 192,-8 104,-8"/>
-<text text-anchor="middle" x="148" y="-155.8" font-family="Times,serif" font-size="14.00" fill="#000000">pkgB</text>
+<text text-anchor="middle" x="148" y="-155.8" font-family="Times,serif" font-size="14.00" fill="#000000">pkgIn</text>
 </g>
 <!-- ar -->
 <g id="node1" class="node">

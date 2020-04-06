@@ -1,4 +1,4 @@
-all: install-pkgOut install-pkgIn run-pkgOutFunc run-pkgInFunc
+all: install-pkgOut install-pkgIn run-pkgOutFunc run-pkgInFunc dot
 
 install-pkgOut: pkgOut
 	cd pkgOut; R -q -e "library(devtools);load_all();document('.');install('.')"
@@ -17,6 +17,9 @@ pkgOut:
 
 pkgIn:
 	R -e "bar <- function() {}; package.skeleton(name='pkgIn', list=c('bar'))"
+
+dot:
+	cd dot; $(MAKE)
 
 clean:
 	rm -f *.tar.gz
