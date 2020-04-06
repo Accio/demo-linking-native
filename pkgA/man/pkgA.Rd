@@ -5,7 +5,7 @@
 \alias{pkgA}
 \title{pkgA for demonstration purpose of linking native routines}
 \description{
-pkgA for demonstration purpose of linking native routines
+A out-going package that exports a native routine
 }
 \author{
 Jitao David Zhang <jitao_david.zhang@roche.com>
