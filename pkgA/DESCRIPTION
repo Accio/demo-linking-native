@@ -7,4 +7,5 @@ Author: Jitao David Zhang <jitao_david.zhang@roche.com>
 Maintainer: Jitao David Zhang <jitao_david.zhang@roche.com>
 Description: Package A exports a C function, pkgA_func, to be used by pkgB
 License: GPL-2
-RoxygenNote: 7.0.2
+Encoding: UTF-8
+RoxygenNote: 7.1.0
