@@ -1,22 +1,22 @@
-all: install-pkgA install-pkgB run-pkgAfunc run-pkgBfunc
+all: install-pkgOut install-pkgIn run-pkgOutFunc run-pkgInFunc
 
-install-pkgA: pkgA
-	cd pkgA; R -q -e "library(devtools);load_all();document('.');install('.')"
+install-pkgOut: pkgOut
+	cd pkgOut; R -q -e "library(devtools);load_all();document('.');install('.')"
 
-run-pkgAfunc:
-	R -q -e "res <- pkgA::pkgAfunc()"
+run-pkgOutFunc:
+	R -q -e "res <- pkgOut::pkgOutFunc()"
 
-install-pkgB: pkgB
-	cd pkgB; R -q -e "library(devtools);load_all();document('.');install('.')"
+install-pkgIn: pkgIn
+	cd pkgIn; R -q -e "library(devtools);load_all();document('.');install('.')"
 
-run-pkgBfunc:
-	R -q -e "res <- pkgB::pkgBfunc()"
+run-pkgInFunc:
+	R -q -e "res <- pkgIn::pkgInFunc()"
 
-pkgA:
-	R -e "foo <- function() {}; package.skeleton(name='pkgA', list=c('foo'))"
+pkgOut:
+	R -e "foo <- function() {}; package.skeleton(name='pkgOut', list=c('foo'))"
 
-pkgB:
-	R -e "bar <- function() {}; package.skeleton(name='pkgB', list=c('bar'))"
+pkgIn:
+	R -e "bar <- function() {}; package.skeleton(name='pkgIn', list=c('bar'))"
 
 clean:
 	rm -f *.tar.gz
