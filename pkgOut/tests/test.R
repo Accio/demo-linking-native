@@ -1,2 +1,2 @@
 library(pkgOut)
-pkgOutfunc()
+pkgOutFunc()

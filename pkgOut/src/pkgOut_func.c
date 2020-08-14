@@ -1,9 +1,6 @@
 // a function exported by pkgOut
 
-#include <R.h>
-#include <Rinternals.h>
-
-#include "pkg_a.h"
+#include "pkgOut.h"
 
 int pkgOut_version() {
   return 1;

@@ -1,8 +1,8 @@
 Package: pkgOut
 Type: Package
-Title: A package to demonstrate how to export native routines to be used in other packages.
-Version: 1.1
-Date: 2020-04-06
+Title: A package to demonstrate how to export native routines to be used in other packages
+Version: 1.2
+Date: 2020-08-14
 Authors@R: 
   person(given = "Jitao David",
          family = "Zhang",
@@ -13,4 +13,4 @@ Maintainer: Jitao David Zhang <jitao_david.zhang@roche.com>
 Description: Exports a C function, pkgOut_func, to be used by pkgIn.
 License: GPL-2
 Encoding: UTF-8
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
