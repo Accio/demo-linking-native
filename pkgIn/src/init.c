@@ -10,6 +10,10 @@ static const R_CallMethodDef callMethods[] = {
   {NULL, NULL, 0}
 };
 
+// define functions from pkgOut
+SEXP (*pkgOut_func)(SEXP);
+int (*pkgOut_version)();
+
 void R_init_pkgIn(DllInfo *info) {
 
   /* register routines to be called by R code */
@@ -23,13 +27,13 @@ void R_init_pkgIn(DllInfo *info) {
    * for entry points specified by character strings so
    * .C calls will only find registered symbols
    */  
-  R_useDynamicSymbols(info, FALSE); 
+  R_useDynamicSymbols(info, FALSE);
 
   /* R_forceSymbols call only allows .C etc calls which 
    * specify entry points by R objects such as C_routineName
    * (and not by character strings)
    */ 
-  R_forceSymbols(info, TRUE); 
+  R_forceSymbols(info, TRUE);
 
   /* C functions implemented in pkgOut */
   pkgOut_func = (SEXP(*)(SEXP)) R_GetCCallable("pkgOut", "pkgOut_func");
