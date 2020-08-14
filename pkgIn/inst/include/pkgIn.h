@@ -3,7 +3,7 @@
 
 // functions imported from pkgOut
 // They are cast from DL_FUNC to the correct return types (SEXP, int)
-SEXP(*pkgOut_func)(SEXP);
-int(*pkgOut_version)();
+extern SEXP(*pkgOut_func)(SEXP);
+extern int(*pkgOut_version)();
 
 SEXP pkgIn_func();
