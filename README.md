@@ -35,7 +35,7 @@ Keep in mind that we use `pkgOut` to refer to the package that exports a native 
 
 This is not the first attempt to create a minimalistic example of linking native
 routines in R for teaching and demonstration purposes. For instance, a project
-with similar purposes was created by David Vaughan and can be found here:
+with similar purposes was created by Davis Vaughan and can be found here:
 https://github.com/DavisVaughan/cexport. Canonical examples that can be found in
 the *Writing R Extensions* and other online resources that demonstrate
 between-package native-routine linking include packages `zoo` and `xts`, `xts`
@@ -46,7 +46,7 @@ as `expm` and `Matrix`.
 This piece of work is different from real-life packages, because it uses
 minimalistic examples to demonstrate the purpose and the basic techniques,
 without involving non-essential commands relevant for native routine linking.
-Compared with the `cexport` package created by David Vaughan, the demo packages
+Compared with the `cexport` package created by Davis Vaughan, the demo packages
 here are more recent (compatible with R-4.0), arguably more compact (because
 both packages are stored in the same directory), and come with a visual element
 that help readers appreciate the issue.
